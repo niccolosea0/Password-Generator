@@ -21,10 +21,7 @@ function generateRandomPassword() {
         }
         return randomPassword
 }
-const generatedPasswordOne = generateRandomPassword()
-const generatedPasswordSecond = generateRandomPassword()
-
 function getPassword() {
-    firstPasswordEl.textContent = generatedPasswordOne
-    secondPasswordEl.textContent = generatedPasswordSecond
+    firstPasswordEl.textContent = generateRandomPassword()
+    secondPasswordEl.textContent = generateRandomPassword()
 }
